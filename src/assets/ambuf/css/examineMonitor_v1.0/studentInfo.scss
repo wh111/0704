@@ -1,0 +1,114 @@
+$boderColor:#dfe6ec; // 边框颜色
+$activeColor:#0087b4; // 激活文本颜色
+$bgColor:#f3f3f3; // 背景颜色
+// 考生考核信息
+.exmUserContent {
+    position: relative;
+    margin: -16px;
+    /* 考核内容 */
+    .exmContentMain {
+        width: 75%;
+        min-height: 500px; // margin: 0 auto;
+      .paperShow{overflow: auto;}
+    }
+    /* 老师信息 */
+    .teacherInfo {
+        width: 25%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding-top: 12px;
+        padding-left: 0; // border-right: 1px solid $boderColor;
+        overflow: auto;
+        background-color: $bgColor;
+        .border {
+            border-bottom: 1px solid $boderColor;
+        }
+        .phontoContent {
+            width: 120px;
+            margin: 10px auto; // border: 1px solid $boderColor;
+            text-align: center;
+            img {
+                width: 100%;
+                height: 120px;
+            }
+        }
+        img {
+            width: 100%;
+        }
+        .teacherName {
+            padding: 5px 0;
+        }
+        .timeInfo {
+            text-align: center;
+            padding: 20px 0;
+        }
+        &~.exmContentMain {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+    .teacherInfoItem {
+        text-align: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+        img {
+            width: 48px;
+            height: 48px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        p {
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        p.active {
+            color: $activeColor;
+            font-weight: bold;
+        }
+        &:hover p:not(.active) {
+            color: $activeColor;
+        }
+    }
+    /* 考生信息 */
+    .studentInfo {
+        width: 25%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0; // border-left: 1px solid $boderColor;
+        background-color: $bgColor;
+        .studentInfoNum {
+            padding-left: 10px;
+            line-height: 32px;
+            background-color: #d1dbe5;
+        }
+        .studentPhoto {
+            width: 120px;
+            margin: 10px auto; // border: 1px solid $boderColor;
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .changeStudent,
+        .serverStatus {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .error {
+            color: red;
+        }
+    }
+    .otherInfo {
+        padding: 0 16px;
+        line-height: 40px;
+        border-top: 1px solid $boderColor;
+    }
+}

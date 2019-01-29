@@ -1,0 +1,65 @@
+$playerHeight: 360px;
+.debugVideoBox {
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid #ececec;
+}
+
+.debugVideoBox-left {
+  width: 500px - 10;
+  height: $playerHeight - 10;
+  float: left;
+  .debugPlugin {
+    padding: 5px;
+    p {
+      line-height: $playerHeight - 10;
+      text-align: center;
+      color: #fff;
+    }
+    .livePlayer {
+      background: #000;
+    }
+  }
+}
+
+.debugVideoBox-right {
+  width: 48%;
+  height: $playerHeight;
+  float: right;
+  legend {
+    padding-top: 4px;
+  }
+  .opinfo, .cbinfo {
+    height: 98px;
+    border: 1px dashed;
+    overflow: auto;
+    padding: 4px;
+    span {
+      display: inline;
+    }
+    .dviTime {
+      width: 70px;
+      display: inline-block;
+    }
+  }
+}
+
+.debugVideoBtnBox {
+  height: 92px;
+  .el-form-item__label {
+    height: 30px;
+  }
+  .el-form-item {
+    margin-bottom: 0;
+  }
+  .el-form-item__content {
+    line-height: 30px;
+  }
+  .el-button {
+    width: 65px;
+  }
+  .hideConsole {
+    line-height: 92px;
+    text-align: center;
+  }
+}

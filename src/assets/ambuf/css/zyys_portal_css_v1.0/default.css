@@ -1,0 +1,650 @@
+@charset "utf-8";
+/* CSS Document */
+@import "../common/reset.css";
+
+/* 
+ *
+ *  @description: 逐月医生门户
+ *  @author: zyc 
+ *  @update: name (2016-08-24) 
+ *  Copyright ambuf. All Rights Reserved.
+ * ***************************************************************************
+ */
+
+/* 
+ *
+ *  @module: 公用样式 by zyc
+ * 
+ * ***************************************************************************
+ */
+body{
+	min-width: 1200px;
+	background: #e7eaec;
+}
+p{
+	line-height: 1.5em;
+}
+
+/* 
+ *
+ *  @module: 首页-top by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.zyys-home-top{
+	height: 50px;
+	background: #323436;
+}
+.zyys-home-top-box{
+	width: 1200px;
+	margin: 0 auto;
+	height: 50px;
+}
+.zyys-home-top-plogo{
+	width: 50%;
+	float: left;
+}
+label.zyys-home-top-search{
+	width: 200px;
+	height: 30px;
+	margin-top: 11px;
+	margin-right: 22px;
+	border-radius:25px;
+	float: right;
+	background: #FFFFFF url(images/icons.png) 0 2px no-repeat;
+}
+label.zyys-home-top-search input{
+	width: 160px;
+	height: 27px;
+	margin-left: 24px;
+	background: none;
+	border: none;
+}
+.zyys-home-top-regAndLogin{
+	width: 158px;
+	padding-top: 10px;
+	float: right;
+}
+.zyys-home-top-logged{
+	width: 240px;
+	color: #d9d9d9;
+	font-size: 0.8em;
+}
+.zyys-home-top-logged em{}
+.zyys-home-top-logged .consoleA{
+	color: #00f21c;
+	font-weight: 700;
+	display: inline;
+	vertical-align: inherit;
+	margin-left: 20px;
+}
+.zyys-home-top-logged .consoleA:hover{
+	color: #e44b2a;
+}
+a.zyys-home-top-reg,a.zyys-home-top-login{
+	width: 70px;
+	height: 32;
+	line-height: 32px;
+	background: #505050;
+	text-align: center;
+	color: #FFFFFF;
+}
+a.zyys-home-top-login{
+	background: #6bc30d;
+}
+a.zyys-home-top-logoutA{
+	margin-left: 20px;
+	color: #fe8300;
+}
+a.zyys-home-top-logoutA:hover{
+	color: #de7200;	
+}
+/* 
+ *
+ *  @module: 首页-banner by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.zyys-home-banner{
+	min-width: 1200px;
+	height: 500px;
+	background:url(images/zyysbannerBg01.jpg) center 0 no-repeat;
+}
+.zyys-home-banner-content{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.zyys-home-banner-textBox{
+	width: 40%;
+	float: left;
+	margin-left: 15px;
+}
+.zyys-home-banner-textBox-tit{
+	margin: 80px 0px 40px 0px;
+	font-size: 2.5em;
+	color: #00ffe1;
+	font-weight: 100;
+}
+.zyys-home-banner-textBox-ptext{
+	margin: 0px 0px 70px 0px;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	color: #abdeff;
+}
+.zyys-home-banner-Btn{
+	width: 208px;
+	height: 60px;
+	line-height: 60px;
+	background: #00b4de;
+	font-size: 1.5em;
+	color: #fefefe;
+	text-align: center;
+	cursor: pointer;
+}
+.zyys-home-banner-rigImg{
+	width: 565px;
+	height: auto;
+	padding-top: 135px;
+	margin-left: 60px;
+	float: left;
+}	
+
+
+/* 
+ *
+ *  @module: 机构门户入口 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ entrance
+ * */
+.agencyportal-menus-wrapper{
+	min-width: 1200px;
+	height: 60px;
+	background: #ffffff;
+	border-bottom: 1px solid #e4e4e4;
+}
+.agencyportal-menus{
+	position: relative;
+	width: 1200px;
+	height: 60px;
+	margin: 0 auto;
+	color: #525456;
+}
+.agencyportal-menus-titBox{
+	width: 130px;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	text-align: center;
+}
+.agencyportal-menus-sltBox{
+	width: 145px;
+	height: 45px;
+	margin-top: 14px;
+	float: left;
+	border-right: 1px solid #e4e4e4;	
+}
+.agencyportal-menus-sltBox label{
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 30px;
+	border-bottom: 2px solid #00bce7;
+	background: #FFFFFF url(images/icons.png) 82px -20px no-repeat;
+}
+.agencyportal-menus-sltBox label.labelHover{
+	background: #F5F5F5 url(images/icons.png) 82px -20px no-repeat;
+}
+.agencyportal-menus-sltBox input{
+	width: 70px;
+	padding: 0 3px;
+	height: 28px;
+	background: none;
+	border: none;
+	font-size: 1em;
+	color: #eb8001;
+}
+
+.agencyportal-menus-sltContent{
+	position: absolute;
+	left: 130px;
+	top: 46px;
+	z-index: 10;
+	width: 700px;
+	height: 270px;
+	display: none;
+}
+.sltContent-Bg{
+	border-left: 100px solid #66686a;
+	height: 15px;
+	padding: 0 1px;
+}
+.sltContent-item-wrapper{
+	height: 270px;
+	padding: 1px;
+	background: #66686a;
+}
+.sltContent-itemAllProvince{
+	margin: 10px 15px;
+	padding: 0 5px;
+	background: #66686a;
+	border-bottom: 1px solid #727475;
+	color: #b4b8bc;
+}
+.sltContent-itemBox{
+	position: relative;
+	width: 100%;
+	min-height: 50px;
+	margin: 5px 0;	
+}
+.sltContent-item-left{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	width: 55px;
+	height: 32px;
+	line-height: 32px;
+	color: #b4b8bc;
+	text-align: center;	
+}
+.sltContent-item-right{
+	margin-left: 55px;
+}
+.sltContent-item-right a{
+	float: left;
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	margin:5px;
+	padding: 0 10px;
+	color: #b4b8bc;
+}
+.sltContent-item-right a:hover{
+	background: #6bc30d;
+	color: #FFFFFF;
+}
+
+.agencyportal-notice-title{
+	float: left;
+	width: 85px;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 15px;
+}	
+.agencyportal-notice-content{
+	float: left;	
+	height: 40px;
+	line-height: 40px;
+	margin-top: 8px;
+}
+.agencyportal-notice-content a{ 
+	color: #018aff;
+}
+.agencyportal-notice-content a:hover{ 
+	color: #eb8001;
+}	
+.agencyportal-menus-content{
+	width: 1200px;
+	min-height: 120px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e4e4e4;	
+}
+.agencyportal-menus-list{
+	margin: 9px 14px;
+	overflow: hidden;
+}
+.agencyportal-menus-list a{
+	display: block;
+	width: 224px;
+	height: 32px;
+	margin:5px;
+	line-height: 32px;
+	float: left;
+	background: #FFFFFF;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	word-break:keep-all;
+}
+.agencyportal-menus-list a:hover{
+	background: #00c7f5;
+	color: #FFFFFF;
+}
+.agencyportal-menus-list a em{
+	padding: 0 5px;
+}
+
+/* 
+ *
+ *  @module: lab切换图 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.zyys-labNav{
+	min-width: 1200px;
+	height: 120px;
+	background: #f7f8f8;
+}
+.zyys-labNav-box{
+	width: 1200px;
+	height: 120px;
+	margin: 0 auto;
+}
+.zyys-labNav-menu{
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	color: #323436;
+	cursor: pointer;
+}
+
+.zyys-labNav-icon01{
+	background:#ebebeb url(images/labNavIcons.png) 0 0 no-repeat;
+}
+.zyys-labNav-icon02{
+	background:#f7f8f8 url(images/labNavIcons.png) 0 -120px no-repeat;
+}
+.zyys-labNav-icon03{
+	background:#ebebeb url(images/labNavIcons.png) 0 -240px no-repeat;
+}
+.zyys-labNav-icon04{
+	background:#f7f8f8 url(images/labNavIcons.png) 0 -360px no-repeat;
+}
+.zyys-labNav-icon05{
+	background:#ebebeb url(images/labNavIcons.png) 0 -480px no-repeat;
+}
+.zyys-labNav-menuVisited{
+	background:#FFFFFF;
+}
+
+.zyys-labNav-menu h4{
+	padding: 36px 0 0 25px;
+}
+.zyys-labNav-menu p{
+	padding-left: 25px;
+	color: #bbbbbb;
+}
+.zyys-labImg{
+	min-width: 1200px;
+	height: 632px;
+	text-align: center;
+}
+.zyys-labImg01{
+	background: url(images/labBg01.jpg) center 0 no-repeat;
+}
+.zyys-labImg02{
+	background: url(images/labBg02.jpg) center 0 no-repeat;
+}
+.zyys-labImg03{
+	background: url(images/labBg03.jpg) center 0 no-repeat;
+}
+.zyys-labImg04{
+	background: url(images/labBg04.jpg) center 0 no-repeat;
+}
+.zyys-labImg05{
+	background: url(images/labBg05.jpg) center 0 no-repeat;
+}
+@-webkit-keyframes fadeIn {
+0% {
+opacity: 0; /*初始状态 透明度为0*/
+}
+50% {
+opacity: 0.5; /*初始状态 透明度为0*/
+}
+75% {
+opacity: 0.75; /*中间状态 透明度为0*/
+}
+100% {
+opacity: 1; /*结尾状态 透明度为1*/
+}
+}
+.zyys-labImg01,.zyys-labImg02,.zyys-labImg03,.zyys-labImg04,.zyys-labImg05,
+.zyys-labImg img{-webkit-animation-name: fadeIn; /*动画名称*/
+-webkit-animation-duration: 0.8s; /*动画持续时间*/
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/}
+
+
+/* 
+ *
+ *  @module: 卓越医生-产品体系 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.zyys-prd-titBox{
+	min-width: 1200px;
+	height: 190px;
+	background: #f1f1f1;
+}
+.zyys-prd-titContent{
+	width: 1200px;
+	height: 190px;
+	margin: 0 auto;
+}
+.zyys-prd-titContent h1{
+	padding-top: 72px;
+	text-align: center;
+	color: #323436;
+	font-weight: 200;
+}
+.zyys-prd-titContent p{
+	padding: 10px 0;
+	text-align: center;
+	color: #b0b0b0;
+}
+.zyys-prd-main{
+	min-width: 1200px;
+	height: 735px;
+	background: url(images/prdBg.jpg) center 0 no-repeat;
+	overflow: hidden;
+}
+.zyys-prd-menusBox{
+	position: relative;
+	width: 950px;
+	height: 500px;
+	margin: 47px auto;
+}
+.zyys-prd-menus,.zyys-prd-menusNull{
+	position: absolute;
+}
+.zyys-prd-menus:hover{
+	color: #FFFFFF;
+	background-color: #001218;
+}
+.w310{width: 310px;}
+.w150{width: 150px;}
+.h310{height: 310px;}
+.h150{height: 150px;}
+
+/*1排*/
+.zyys-prd-menus01{
+	left: 0;
+	top: 0;
+	background: #efae00 url(images/prdMenusIcons.png) 0 0 no-repeat;
+}
+.zyys-prd-menus02{
+	left: 320px;
+	top: 0;
+	background: #0076a2 url(images/prdMenusIcons.png) -320px 0 no-repeat;
+}
+.zyys-prd-menus03{
+	left: 640px;
+	top: 0;
+	background: #50e748 url(images/prdMenusIcons.png) -640px 0 no-repeat;
+}
+.zyys-prd-menus04{
+	left: 800px;
+	top: 0;
+	background: #0076a2 url(images/prdMenusIcons.png) -800px 0 no-repeat;
+}
+/*2排*/
+.zyys-prd-menus05{
+	left: 320px;
+	top: 160px;
+	background: #0076a2 url(images/prdMenusIcons.png) -320px -160px no-repeat;
+}
+.zyys-prd-menus06{
+	left: 480px;
+	top: 160px;
+	background: url(images/prdMenusBg.png) 0 0 repeat-x;
+}
+.zyys-prd-menus07{
+	left: 640px;
+	top: 160px;
+	background: #0076a2 url(images/prdMenusIcons.png) -640px -160px no-repeat;
+}
+.zyys-prd-menus08{
+	left: 800px;
+	top: 160px;
+	background: #0076a2 url(images/prdMenusIcons.png) -800px -160px no-repeat;
+}
+/*3排*/
+.zyys-prd-menus09{
+	left: 0;
+	top: 320px;
+	background: #0076a2 url(images/prdMenusIcons.png) 0 -320px no-repeat;
+}
+.zyys-prd-menus10{
+	left: 160px;
+	top: 320px;
+	background: #0076a2 url(images/prdMenusIcons.png) -160px -320px no-repeat;
+}
+.zyys-prd-menus11{
+	left: 320px;
+	top: 320px;
+	background: url(images/prdMenusBg.png) 0 0 repeat-x;
+}
+.zyys-prd-menus12{
+	left: 480px;
+	top: 320px;
+	background: #00baff url(images/prdMenusIcons.png) -480px -320px no-repeat;
+}
+.zyys-prd-menus13{
+	left: 800px;
+	top: 320px;
+	background: #0076a2 url(images/prdMenusIcons.png) -800px -320px no-repeat;
+}
+/*4排*/
+.zyys-prd-menus14{
+	left: 0;
+	top: 480px;
+	background: #0076a2 url(images/prdMenusIcons.png) 0 -480px no-repeat;
+}
+.zyys-prd-menus15{
+	left: 320px;
+	top: 480px;
+	background: url(images/prdMenusBg.png) 0 0 repeat-x;
+}
+.zyys-prd-menus16{
+	left: 800px;
+	top: 480px;
+	background: url(images/prdMenusBg.png) 0 0 repeat-x;
+}
+
+.zyys-prd-text01 p{
+	padding-top:210px;
+	font-size: 2.2em;
+	letter-spacing: 0.4em;
+	padding-left: 0.4em;
+	text-align: center;
+}
+.zyys-prd-text01{color: #FFFFFF;}
+.zyys-prd-text02 p{
+	padding-top:110px;
+	font-size: 1.5em;
+	letter-spacing: 0.4em;
+	padding-left: 0.4em;
+	text-align: center;
+}
+.zyys-prd-text02{color: #00a0dc;}
+
+.zyys-prd-text03 p,.zyys-prd-text04 p{
+	padding-top:110px;
+	font-size: 1.5em;
+	letter-spacing: 0.4em;
+	padding-left: 0.4em;
+	text-align: center;
+}
+.zyys-prd-text03{color: #FFFFFF;}
+.zyys-prd-text04{color: #00a0dc;}
+
+/* 
+ *
+ *  @module: 友情链接 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.zyys-fdLink-title{
+	width: 1200px;
+	height: 60px;
+	margin: 16px auto 0 auto;
+	background: #FFFFFF;
+	border-bottom: 1px solid #e7eaec;
+}
+.zyys-fdLink-title p.leftText{
+	width: 160px;
+	float: left;
+	padding-left: 20px;
+	line-height: 60px;
+	color: #6b6b6b;	
+}
+.zyys-fdLink-title p.rightText{
+	width: 220px;
+	float: right;
+	padding-left: 10px;
+	line-height: 60px;
+	color: #6b6b6b;
+	border-left: 1px solid #e7eaec;
+}
+.zyys-fdLink-content{
+	width: 1200px;
+	min-height: 180px;
+	margin: 0 auto 16px auto;
+	background: #FFFFFF url(images/fdLinkImgs.jpg) center 0 no-repeat;
+}
+
+
+/* 
+ *
+ *  @module: 底部信息 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.zyys-footer{
+	min-height: 110px;
+	padding: 1px 0;
+	background: #373d41;
+}
+.zyys-footer-box{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.zyys-footer-nav{
+	width: 50%;
+	margin-top: 20px;
+	float: left;	
+}
+.zyys-footer-nav a{
+	width: 110px;
+	height: 32;
+	line-height: 32px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+.zyys-footer-right{
+	width: 40%;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 0.8em;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+
+
+

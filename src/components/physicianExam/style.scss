@@ -1,0 +1,70 @@
+.physicianExamBox {
+  height: 100%;
+  position: relative;
+  .lineBox {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: #eaedf1;
+  }
+  .thereFloorBox {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+  }
+  .physicianExams {
+    position: absolute;
+    top: 146px;
+    bottom: 0;
+    &.left {
+      left: 0
+    }
+    &.right {
+      right: 0
+    }
+  }
+  .physicianExamContentBox {
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    top: 60px;
+    overflow: auto;
+  }
+  .physicianExamBtns {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+  }
+  .errTips {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+  }
+}
+
+.physicianExamineMonitor {
+  height: 100%;
+  position: relative;
+  .physicianExamContentBox {
+    bottom: 0;
+  }
+  .physicianExams {
+    top: 180px;
+  }
+  .physicianExamBox {
+    padding-bottom: 40px;
+  }
+  .physicianExamBtns {
+    background-color: #fff;
+  }
+  .physicianExamMainBox {
+    height: 100%;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,446 @@
+@charset "utf-8";
+/* CSS Document */
+@import "../common/reset.css";
+
+/*
+ *
+ *  @description: 在线学习-资源学习
+ *  @author: zyc
+ *  @update: name (2016-08-23)
+ *  Copyright ambuf. All Rights Reserved.
+ * ***************************************************************************
+ */
+
+/*
+ *
+ *  @description: 视频学习
+ *  @author: zyc
+ *  @update: name (2016-08-23)
+ *  Copyright ambuf. All Rights Reserved.
+ * ***************************************************************************
+ */
+/*  视频学习首页  */
+.videoHome-type{
+  position: relative;
+  width: 160px;
+  background: #324057 url("images/type.png") 10px 10px no-repeat;
+  color: #ffffff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+.videoHome-type:hover{
+  color: #addff2;
+  box-shadow: 0 0 4px 0 rgba(135,134,134,0.50);
+  background: #004057 url("images/type.png") 10px 10px no-repeat;
+}
+.videoHome-list-sort{
+  padding: 0 0 10px 0;
+}
+.videoHome-type-content{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  width: 200px;
+  display: none;
+  background: #FCFCFC;
+  box-shadow: 0 0 4px 0 rgba(135,134,134,0.50);
+}
+.videoHome-type-subContent{
+  position: absolute;
+  top: 0;
+  left: 198px;
+  z-index: -1;
+  width: 480px;
+  display: none;
+  background: #ffffff;
+  box-shadow: 0 0 4px 0 rgba(135,134,134,0.50);
+}
+.videoHome-type-subContent-title{
+  margin: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ececec;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1F2D3D;
+}
+.videoHome-type-subContent-typesBox{
+  overflow: hidden;
+  padding: 0px 20px;
+  color: #1F2D3D;
+}
+.videoHome-type-subContent-types{
+  padding: 0 5px;
+}
+.videoHome-type-subContent-types dd{
+  width: 33%;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #1F2D3D;
+}
+.videoHome-type-subContent-types dd:hover{
+  color: #20A0FF;
+}
+.videoHome-type-content-list{
+}
+.videoHome-type-content-list li{
+  padding: 0 8px;
+  border-bottom: 1px solid #EFF2F7;
+  font-size: 14px;
+  color: #1F2D3D;
+  letter-spacing: -0.26px;
+}
+.videoHome-type-content-list li .arrow-right{
+  margin-top: 15px;
+  float: right;
+  color: #CACACA;
+  font-size: 12px;
+}
+.videoHome-type-content-list li:hover{
+  color: #20A0FF;
+}
+.videoHome-type-content-list li:hover .videoHome-type-subContent{
+  display: block;
+}
+.videoHome-type:hover .videoHome-type-content{
+  display: block;
+}
+
+/*  视频列表展示  */
+.videoHome-list{
+  overflow: hidden;
+}
+.videoHome-list-item{
+  width: 220px;
+  height: 220px;
+  float: left;
+  position: relative;
+  margin: 5px;
+  border: 1px solid #F9FAFC;
+  background: #F9FAFC;
+}
+.videoHome-list-item-img{
+  height: 150px;
+}
+.videoHome-list-item-img img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.videoHome-list-item-mess{
+  padding: 5px 10px 10px 10px;
+}
+.videoHome-list-item-name{
+  font-weight: 700;
+}
+.videoHome-list-item .playerBox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: #000000;
+  display: none;
+  text-align: center;
+  opacity:0.5;
+}
+.videoHome-list-item .btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -30px;
+  display: none;
+  z-index: 5;
+}
+.videoHome-list-item-img:hover .playerBox,
+.videoHome-list-item-img:hover .btn{
+  display: block;
+}
+/*  视频查看展示  */
+.showContent{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.video-type-box{
+  position: relative;
+  padding: 0 0 10px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+}
+.video-title-left{
+  margin-right: 400px;
+}
+.video-title-right{
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 500px;
+  padding: 10px 0;
+}
+.video-introduce-title{
+  padding: 20px 0;
+}
+.video-introduce-content{
+  min-height: 200px;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+/* 视频评论 */
+.comment-subBtn{
+  padding: 20px;
+  float: right;
+}
+.comment-list{
+  position: relative;
+  min-height: 150px;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  background: #F9FAFC;
+}
+.comment-list-header{
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 100px;
+}
+.comment-list-date{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 200px;
+  text-align: right;
+}
+.comment-user-mess{
+  margin: 0 20px 0 170px;
+  padding-top: 50px;
+  color: #F7BA2A;
+  font-weight: 700;
+}
+.comment-list-content{
+  margin: 0 20px 0 170px;
+  padding-top: 10px;
+}
+.showMore{
+  padding: 10px 0;
+  text-align: center;
+  background: #f5f5f5;
+}
+.commentNum{
+  position: relative;
+  text-align: right;
+  top:30px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.commentNum em{
+  color: #F7BA2A;
+}
+
+/*  文档文献  */
+.c-container{
+  width: 75%;
+  font-size: 13px;
+  line-height: 1.54;
+  word-wrap: break-word;
+  word-break: break-word;
+  table-layout: fixed;
+}
+.c-container .t{
+  line-height: 1.54;
+  font-weight: 400;
+  font-size: medium;
+  margin-bottom: 1px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.c-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+  font-style: normal;
+  overflow: hidden;
+  background: url("images/icons.png");
+}
+.c-icon-doc {
+  background-position: -288px -192px;
+}
+.c-icon-xls {
+  background-position: -312px -192px;
+}
+.c-icon-ppt {
+  background-position: -336px -192px;
+}
+.c-icon-pdf {
+  background-position: -360px -192px;
+}
+.c-gap-icon-right-small {
+  margin-right: 5px;
+}
+.c-abstract,.f13{
+  font-size: 13px;
+}
+.f13{
+  margin-top: 10px;
+}
+.f13 em{
+  padding: 0 10px;
+  color: #8492A6;
+}
+.docTitleA{
+  color: #00a0dc;
+}
+.docTitleA:hover{
+  color: #ff0000;
+}
+.downLoadDoc{
+  width: 90%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/*  医学图谱  */
+.all-work-list {
+  padding: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+.all-work-lab{
+  background: #ffffff;
+  height: 45px;
+}
+.work-list-box{
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+.card-box{
+  float: left;
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 20px 20px 0;
+}
+.card-box .card-img{
+  width: 260px;
+}
+.card-box .card-img a img {
+  /*width: 100%;*/
+  width: 260px;
+  height: 168px;
+}
+.card-box .card-img {
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+.card-box .card-info {
+  border-bottom: 1px solid #eee;
+  padding: 11px 16px 13px;
+  height: 75px;
+  position: relative;
+}
+.info-title {
+  margin-bottom: 1px;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card-box .card-info .card-info-type {
+  font-size: 12px;
+  color: #bbb;
+  margin-bottom: 17px;
+  height: 18px;
+}
+.card-box .card-info .card-info-item {
+  font-size: 12px;
+  color: #bbb;
+  position: absolute;
+  bottom: 14px;
+}
+.card-box .card-item {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 16px;
+  font-size: 12px;
+  position: relative;
+}
+.card-box .card-item .user-avatar {
+  width: 120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card-box .card-item .time {
+  color: #bbb;
+  float: right;
+}
+
+/*  病理学  */
+.caseListBox{
+  min-height: 120px;
+  border-bottom: 1px solid rgb(224, 230, 237);
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+.caseListBox:hover{
+  background: #F9FAFC;
+}
+.caseListBox:hover .caseListBox-right-title{
+  color: #FF4949;
+}
+.caseListBox-left{
+  width: 120px;
+  height: 120px;
+}
+.caseListBox-left img{
+  width: 100%;
+  height: 100%;
+}
+.caseListBox-right{
+  position: absolute;
+  top: 10px;
+  left: 140px;
+  right: 10px;
+}
+.caseListBox-right-top{
+  overflow: hidden;
+  width: 95%;
+  padding-bottom: 10px;
+}
+.caseListBox-right-title{
+  float: left;
+  width: 60%;
+  font-weight: 700;
+  font-size: 14px;
+}
+.caseListBox-right-date{
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+.caseListBox-right-text{
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box; /** 将对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 4; /** 显示的行数 **/
+  overflow: hidden;  /** 隐藏超出的内容 **/
+}
+

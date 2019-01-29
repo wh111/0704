@@ -1,0 +1,63 @@
+// 考核场次 --- 时间表
+$boderColor:#dfe6ec; // 边框颜色
+$menuActiveColor:#0087b4; // 菜单激活文本颜色
+.examineIntervalTime {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $boderColor;
+    .exITHeader {
+        height: 40px;
+        margin-top: -10px;
+    }
+    .timeMain {
+        width: 40%;
+    }
+    .showTime {
+        p {
+            font-weight: bold;
+        }
+        float: left;
+        margin-right: 10%;
+    }
+    .publishButton {
+        float: right
+    }
+    .exContent {
+        position: absolute;
+        top: 181px;
+        bottom: 0;
+        left: 12px;
+        right: 12px;
+    }
+    .exLeftMenu {
+        width: 120px;
+        height: 100%;
+        border-right: 1px solid $boderColor;
+        p {
+            height: 40px;
+            line-height: 40px;
+            cursor: pointer;
+            &:hover {
+                color: $menuActiveColor;
+            }
+            &.active {
+                color: $menuActiveColor;
+                font-weight: bold;
+            }
+        }
+    }
+    .exRightBody {
+        position: absolute;
+        left: 120px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        .nodataTips {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            text-align: center;
+            transform: translateY(-50%);
+        }
+    }
+}

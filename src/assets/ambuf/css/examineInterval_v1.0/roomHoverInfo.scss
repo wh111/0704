@@ -1,0 +1,36 @@
+// 考核场次信息查看
+.roomHoverInfo {
+  .basicInfo > span {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .noData {
+    color: red;
+  }
+  .teacher {
+    overflow: hidden;
+    margin-bottom: 10px;
+    span {
+      height: 22px;
+      line-height: 22px;
+      display: inline-block;
+      padding: 0 4px;
+      & + span {
+        background-color: #13ce66;
+      }
+    }
+  }
+  .tList {
+    line-height: 1;
+    overflow: hidden;
+    list-style: none;
+    background-color: #20a0ff;
+    border-radius: 4px;
+    color: #fff;
+    float: left;
+    margin: 10px 10px 0 0;
+  }
+  .title {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "vue_library",
+  "content": {
+    "../node_modules/vue/dist/vue.esm.js": {
+      "id": 20,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "../node_modules/webpack/buildin/global.js": {
+      "id": 26,
+      "meta": {}
+    },
+    "../node_modules/vue-cookie/src/vue-cookie.js": {
+      "id": 440,
+      "meta": {}
+    },
+    "../node_modules/vue-router/dist/vue-router.esm.js": {
+      "id": 442,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "../node_modules/vuex/dist/vuex.esm.js": {
+      "id": 443,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "Store",
+        "mapState",
+        "mapMutations",
+        "mapGetters",
+        "mapActions",
+        "default"
+      ]
+    },
+    "../node_modules/tiny-cookie/tiny-cookie.js": {
+      "id": 822,
+      "meta": {}
+    }
+  }
+}

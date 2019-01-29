@@ -1,0 +1,49 @@
+ const tableData = [
+
+   //师资情况
+   {
+     firstLevel:'师资情况',
+     secondLevel:'教授及副教授',
+     weight:'',
+     remark:'副高职称以上教师承担本科理论课时数的90%以上，其中有教学职称人员占50%.',
+    },
+   {
+     firstLevel:'',
+     secondLevel:'见习带教',
+     weight:'',
+     remark:'见习带教老师具有主治医师以上资格10分；',
+    },
+   //教学工作量
+   {
+     firstLevel:'教学工作量',
+     secondLevel:'教学课表',
+     weight:'',
+     remark:'开学前一周交齐教学方案，教学方案符合要求，未达标准者该项分值为0',
+    },
+   {
+     firstLevel:'',
+     secondLevel:'集体备课',
+     weight:'',
+     remark:'有备课记录，未达标准者该项分值为0',
+    },
+   {
+     firstLevel:'',
+     secondLevel:'教学秩序',
+     weight:'',
+     remark:'按规定要求办理停课、调课、代课，未按规定办理视为教学事故；出现一次教学事故扣??分',
+    },
+   {
+     firstLevel:'',
+     secondLevel:'理论考核',
+     weight:'',
+     remark:'命题试卷在教学任务发布后按时提交，未按照要求提交得0分',
+    },
+   //教学质量评估
+   {
+     firstLevel:'教学质量评估',
+     secondLevel:'课堂教学效果评估结果',
+     weight:'',
+     remark:'评估优比例大于等于90%，每降5个百分点扣5分',
+    },
+]
+export  default tableData

@@ -1,0 +1,22 @@
+/******************************* 考核场次 *********************************/
+
+// 队列设置
+.queue {
+    .move {
+        width: 40px;
+        height: 118px;
+        float: left;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .moveImg {
+        width: 30px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+    }
+    .moveLeft {
+        margin-top: 20px;
+    }
+    .moveRight {}
+}

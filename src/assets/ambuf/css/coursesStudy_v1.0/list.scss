@@ -1,0 +1,72 @@
+/* 课程列表页 */
+
+
+/* 条件开始 */
+
+.coursesListNavInfo {
+    line-height: 36px;
+}
+
+.coursesListNav {
+    margin-top: 10px;
+}
+
+.coursesListCondition {
+    margin-top: 20px;
+    padding: 4px 16px;
+    border: 1px solid #657180;
+    span {
+        color: #657180;
+    }
+  .coursesListCondition1 span{
+    color: #fff;
+  }
+}
+
+.coursesListDelimiter {
+    margin: 0 10px;
+    line-height: 35px;
+}
+
+
+/* 条件结束 */
+
+// 内容项
+$coursesListItemPicHeight: 160px;
+$coursesListItemPicWidth: 270px;
+.coursesListBox {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.coursesListMain {}
+
+.coursesListItem {
+    margin-top: 20px;
+    position: relative;
+    height: $coursesListItemPicHeight + 20;
+    border-bottom: 1px solid #657180;
+}
+
+.coursesListItemPic {
+    width: $coursesListItemPicWidth;
+    height: $coursesListItemPicHeight;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.coursesListInfo {
+    width: 100%;
+    height: $coursesListItemPicHeight;
+    padding-left: $coursesListItemPicWidth + 20;
+}
+
+.coursesListInfoItem {
+    margin-top: 5px;
+}
+
+.coursesListInfoItemIntro {
+    height: 40px;
+    overflow: hidden;
+}

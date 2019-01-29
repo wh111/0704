@@ -1,0 +1,22 @@
+.detailsOptionsList {
+  margin: 0 -18px;
+  &.show{
+    padding: 0 18px;
+    border-bottom: 1px solid #dfe6ec;
+    line-height: 40px;
+    .text{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+  td {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+.cell{
+  .detailsOptionsList:last-child{border: none;}
+}

@@ -1,0 +1,86 @@
+$border: 1px solid black;
+$padding: 30px;
+.graduationAppraisalBox {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    right: 0;
+    bottom: 16px;
+    overflow: auto;
+    padding: 16px;
+    &.noPosition {
+        position: initial;
+    }
+}
+
+.graduationAppraisal {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 14px;
+    .graduationAppraisalTitle {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .gaMain {
+        border: $border;
+    }
+    .gaSubject {
+        // 实习科目
+        padding: $padding;
+        p {
+            display: inline-block;
+        }
+    }
+    .gaTimes {
+        // 时间相关
+        display: flex;
+        border-top: $border;
+        border-bottom: $border;
+        p {
+            display: inline-block;
+        }
+        span {
+            padding: 0 10px;
+            border-bottom: $border;
+        }
+    }
+    .gaSumTime {
+        flex: 2;
+        border-right: $border;
+        padding: $padding;
+    }
+    .gaTimeItem {
+        flex: 8;
+        padding: $padding;
+    }
+    .gaContent {
+        // 内容部分
+        padding: $padding;
+        min-height: 200px;
+        &~.gaContent {
+            border-top: $border;
+        }
+    }
+    .gacTitle {
+        margin-bottom: 20px;
+    }
+    .gacText {
+        min-height: 100px;
+    }
+    .gacSignature,
+    .gacDay {
+        padding-right: 80px;
+        margin-top: 20px;
+        text-align: right;
+        span {
+            margin: 0 10px;
+        }
+    }
+    .gacSignature {
+        padding-right: 110px;
+    }
+    .el-textarea__inner,
+    .gacText {
+        text-indent: 2em;
+    }
+}

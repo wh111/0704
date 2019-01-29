@@ -1,0 +1,728 @@
+@charset "utf-8";
+/* CSS Document */
+@import "../common/reset.css";
+
+/* 
+ *
+ *  @description: 机构门户
+ *  @author: zyc 
+ *  @update: name (2016-08-23) 
+ *  Copyright ambuf. All Rights Reserved.
+ * ***************************************************************************
+ */
+
+/* 
+ *
+ *  @module: 公用样式 by zyc
+ * 
+ * ***************************************************************************
+ */
+p{
+	line-height: 1.5em;
+}
+
+/* 
+ *
+ *  @module: 首页-top by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.home-top{
+	height: 65px;
+	background: #004160;
+}
+.home-top-box{
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 65px;
+}
+.home-top-plogo{
+	width: 50%;
+	float: left;
+}
+.home-top-zlogo{
+	width: 130px;
+	float: right;
+}
+
+/* 
+ *
+ *  @module: 首页-banner by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.home-banner,.login-banner{
+	height: 513px;
+	background:#10ade4 url(images/pbannerBg.jpg) center 0 no-repeat;
+}
+.login-banner{
+	background:#10ade4 url(images/loginBg.jpg) center 0 no-repeat;
+}
+.home-banner-box{
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 513px;
+}
+.home-banner-textBox{
+	width: 50%;
+	float: left;
+	margin-left: 15px;
+}
+.home-banner-textBox-tit{
+	margin: 52px 0px 40px 0px;
+	font-size: 2.5em;
+	color: #FFFFFF;
+	font-weight: 100;
+}
+.home-banner-textBox-ptext{
+	margin: 0px 0px 70px 0px;
+	font-size: 1em;	
+	color: #FFFFFF;
+}
+.home-banner-Btn{
+	width: 208px;
+	height: 60px;
+	line-height: 60px;
+	background: #006291;
+	font-size: 1.5em;
+	color: #FFFFFF;
+	text-align: center;
+	cursor: pointer;
+}
+.home-login{
+	width: 370px;
+	height: 428px;
+	background: url(images/logBg.png) 0 0 no-repeat;
+	margin: 43px 43px 0 0;
+	float: right;
+}
+.home-login-tit{
+	margin-top: 16px;
+	height: 50px;
+	line-height: 50px;
+	background: #005781;
+	font-size: 1.5em;
+	color: #FFFFFF;
+	text-align: center;
+}
+.home-form{
+	width: 310px;
+	margin: 37px auto 0 auto;
+}
+.home-form-inputBox{
+	height: 48px;
+	background: #FFFFFF;
+	border: 1px solid #e4e8eb;
+	margin-bottom: 20px;
+}
+.home-form-inputWrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.home-form-inputIcon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 46px;
+	height: 100%;
+	background:#e4e8eb url(images/loginIcons.png) 0 0 no-repeat;
+}
+.home-form-inputPar{
+	margin-left: 46px;
+	height: 100%;
+}
+.home-form-inputPar label{
+	display: block;
+	width: 98%;
+	height: 100%;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+.home-form-inputPar input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background:#fffff;
+}
+.home-form-inputIcon-user{
+	background-position: 11px -46px;
+}
+.home-form-inputIcon-pwd{
+	background-position: 11px 0;
+}
+.home-form-jzzh{
+	overflow: hidden;
+}
+.home-form-jzzh-check{
+	padding: 0 10px;
+	background: url(images/loginIcons.png) 0 -92px no-repeat;
+	cursor: default;
+}
+.home-form-jzzh-checked{
+	background: url(images/loginIcons.png) 0 -110px no-repeat;
+}
+.home-form-jzzh-left{
+	width: 100px;	
+	float: left;
+	font-size: 0.8em;
+	color: #a2a6a8;
+}
+.home-form-jzzh-right{
+	width: 80px;
+	float: right;
+	text-align: right;
+}
+.home-form-jzzh-right a{
+	font-size: 0.8em;
+	color: #04a9f4;	
+}
+.home-form-submitBtn{
+	margin: 15px 0 10px 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.2em;
+	color: #272727;
+	background: #f79d00;
+	border: none;
+	cursor: pointer;
+}
+.home-form-regBox{
+	height: 45px;
+	text-align: center;
+}
+.home-form-regBox a{
+	color: #008aff;
+	border-bottom: 1px solid #008aff;
+}
+.home-form-ts{
+	font-size: 12px;
+	color: #ff0000;
+	text-align: center;
+}
+
+
+/* 
+ *
+ *  @module: 首页-列表信息 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.home-listBox{
+	position: relative;
+	max-width: 1200px;
+	margin:  38px auto;
+	height: auto;
+}
+.home-list-titBox{
+	height: 36px;
+	line-height: 34px;
+	background: url(images/listTitBg.png) 0 bottom no-repeat;
+}
+.home-list-titIcon{
+	width: 33px;
+	height: 34px;
+	float: left;
+	background: url(images/listIcons.png) 0 0 no-repeat;
+}
+.home-list-titText{
+	width: 90px;
+	padding-left: 5px;
+	line-height: 34px;
+	float: left;
+	font-size: 1.2em;
+	color: #1166b2;
+}
+.home-list-moreText{
+	line-height: 34px;
+	float: right;
+}
+.home-list-moreText a{
+	padding-right: 20px;
+	background: url(images/listIcons.png) 25px -232px no-repeat;
+	color: #424242;
+}
+.home-list-moreText a:hover{
+	color: #e40000;
+	background: url(images/listIcons.png) 25px -257px no-repeat;
+}
+.home-list-titIcon01{
+	background-position: 0 0;
+}
+.home-list-titIcon02{
+	background-position: 0 -42px;
+}
+.home-zcfg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 430px;
+}
+.home-list-content{
+	border: 1px solid #f5f5f5;
+}
+.home-notice{	
+	margin-right: 440px;
+}
+dl.list{margin: 10px;}
+dl.list dd,dl.list dt{
+	position: relative;
+}
+dl.list dd{
+	border-bottom: 1px solid #f5f5f5;
+}
+dl.list dd a{
+	display:inline;
+}
+.headlinesImg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10em;
+	height: 8.5em;
+}
+.headlinesImg a,.headlinesImg img{
+	width: 100%;
+	height: 100%;
+}
+.headlinesText{
+	margin-left: 11em;
+	height: 9em;
+}
+.headlinesText-title{
+	border-bottom: 1px solid #e1e1e1;
+}
+.headlinesText-title h3,.headlinesText-title p{
+	text-align: center;
+}
+.headlinesText-title a{
+	color: #fcac00;
+}
+.headlinesText-title a:hover{
+	color: #005bac;
+}
+.headlinesText-title h3{
+	font-weight: 100;
+}
+.headlinesText-title p{
+	font-size: 0.8em;
+	color: #808080;
+	padding: 8px 0 14px 0;
+}
+.headlinesText-abstract{
+	padding-top: 8px;
+	height: 3.8em;
+	font-size: 0.8em;
+	color: #808080;
+}
+.headlinesText-title h3{
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	word-break:keep-all;
+}
+
+dl.list dd .listTitle{
+	margin-right: 120px;
+	padding: 8px 0 8px 22px;
+	background: url(images/listIcons.png) -7px -196px no-repeat;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	word-break:keep-all;
+}
+dl.list dd .listDate{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	padding: 8px 0;
+	text-align: center;	
+}
+dl.list dd .listDate a{
+	color: #808080;
+}
+
+
+ul.list{margin: 10px;}
+ul.list li{
+	position: relative;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+ul.list li a{
+	display: inline;
+}
+ul.list li .listTitle{
+	margin-right: 120px;
+	padding: 8px 0 8px 22px;
+	background: url(images/listIcons.png) -7px -196px no-repeat;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	word-break:keep-all;
+}
+ul.list li .firstIcon{
+	background: url(images/listIcons.png) -7px -76px no-repeat;
+}
+ul.list li .secIcon{
+	background: url(images/listIcons.png) -7px -118px no-repeat;
+}
+ul.list li .thirdIcon{
+	background: url(images/listIcons.png) -7px -158px no-repeat;
+}
+ul.list li .listDate{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	padding: 8px 0;
+	text-align: center;
+}
+ul.list li .listDate a{
+	color: #808080;
+}
+
+
+/* 
+ *
+ *  @module: 底部信息 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.footer{
+	height: 198px;
+	padding: 1px;
+	background: #005781;
+}
+.footer p{
+	width: 960px;
+	margin: 16px auto;
+	line-height: 2em;
+	font-size: 0.8em;
+	text-align: center;
+	color: #a3d0ec;
+}
+
+
+/* 
+ *
+ *  @module: 用户注册 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.bdybg{
+	background: #f5f5f5;
+}
+.reg-tit{
+	padding:54px 0;
+	font-size: 2em;
+	color: #de7e22;
+	text-align: center;
+}
+.reg-content{
+	width: 550px;
+	margin: 0 auto;
+}
+dl.reg-listbox{}
+dl.reg-listbox dd,dl.reg-listbox dt{
+	position: relative;
+	margin-bottom: 10px;
+}
+.reg-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 128px;
+	height: 46px;
+	line-height: 50px;
+	text-align: right;
+	color: #262c2d;
+}
+.reg-right{
+	height: 46px;
+	margin-left: 130px;	
+	background: #FFFFFF;
+	border: 1px solid #d9d9d9;
+}
+dl.reg-listbox dt .reg-right{
+	border: none;
+	background: none;
+	color: #de4e22;
+}
+dl.reg-listbox dt.ptext{
+	height: auto;
+	height: 180px;
+}
+dl.reg-listbox dt.ptext p{
+	
+	line-height: 40px;
+}
+.reg-required{
+	position: absolute;
+	top: 0;
+	right: -10px;
+	height: 46px;
+	line-height: 3em;
+	color: #FF0000;
+}
+.reg-right input{
+	width: 410px;
+	height: 100%;
+	margin-left: 4px;
+	background: none;
+	border: none;
+	font-size: 1em;
+}
+.reg-right label{
+	display: block;
+	width: 100%;
+	height: 100%;	
+}
+.reg-right label.text{
+	line-height: 50px;
+	padding-left: 5px;
+}
+select.inputStyle{
+	width: 410px;
+	height: 100%;
+	margin-left: 4px;
+	background: none;
+	border: none;
+}
+input.submitBtn{
+	width: 100%;
+	height: 100%;
+	background: #ffba00;
+	border: none;
+	font-size: 1.2em;
+	text-align: center;
+	color: #000000;
+	cursor: pointer;
+}
+input.submitBtnHover{
+	background: #005781;
+	color: #FFFFFF;
+}
+
+
+/* 
+ *
+ *  @module: 用户登录 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.login-bdyBg{
+	background:url(images/logBg.jpg) fixed center 0 repeat-x;
+}
+.login-wrapper{
+	position: relative;
+	height: 535px;
+}
+.login-box{
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	width: 370px;
+	height: 428px;
+	margin: 0 0 0 -142px;
+}
+.login-footer{
+	position: relative;
+	background: none;
+}
+
+
+/* 
+ *
+ *  @module: 新闻列表 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.curr-location-wrapper{
+	height: 50px;
+	background: #f5f5f5;
+	border-bottom: 1px solid #e6e6e6;
+}
+.curr-location{
+	max-width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	background: url(images/listIcons.png) 5px -284px no-repeat;
+}
+.curr-location p{
+	padding-left: 42px;
+	height: 100%;
+	line-height: 60px;
+	text-align: left;
+}
+.news-main{
+	position: relative;
+	max-width: 1200px;
+	margin:  32px auto;
+	min-height: 860px;
+	height: auto;
+}
+.news-list-left{
+	margin-left: 10px;
+	margin-right: 392px;
+}
+.news-list-right{
+	position: absolute;
+	top: -22px;
+	right: 0;
+	width: 372px;
+}
+.list-cut-box{
+	padding-top: 10px;
+}
+.list-cut-line{
+	border: 1px solid #e6e6e6;
+}
+.listPage-login{
+	width: 370px;
+	height: 428px;
+	padding: 1px 0;
+	background: url(images/logBg2.png) 0 0 no-repeat;
+}
+.news-list-rightBox{
+	margin-top: 14px;
+}
+.news-details{
+	position: relative;
+	max-width: 1200px;
+	margin:  32px auto;
+	min-height: 360px;
+	height: auto;
+}
+.news-details-title{
+	height: 85px;
+	border-bottom: 2px solid #2997dc;
+}
+.news-details-title h3{
+	text-align: center;
+	color: #fcac00;
+	font-weight: 200;
+}
+.news-details-title p{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #858585;
+}
+.news-details-title .fontSizeBox{
+	color: #2997dc;
+}
+.news-details-title .fontSizeBox a{
+	vertical-align: inherit;
+	color: #2997dc;
+}
+.news-details-title .fontSizeBox a:hover{
+	color: #eaa500;
+}	
+
+.news-details-content{
+	max-width: 1160px;
+	height: auto;
+	margin:20px;
+}
+.news-details-stage{
+	margin-bottom: 40px;
+}
+.news-details-content p.ptext{
+	text-indent: 2em;
+	color: #808080;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+.news-details-img{
+	width: 650px;
+	height: 430px;
+	margin: 0px auto 20px auto;
+}
+.news-details-img img{
+	width: 100%;
+	height: 100%;
+}
+.news-details-img-tit{
+	width: 650px;
+	height: auto;
+	margin: 0px auto 20px auto;
+	color: #808080;
+	text-align: center;
+}
+.news-details-btnBox{
+	width: 500px;
+	height: px;
+	margin: 48px auto;
+	text-align: center;
+}
+.news-details-btn{
+	width: 80px;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 10px;
+	border: 1px solid #ececec;
+	background: #f5f5f5;
+	text-align: center;
+	color: #2997dc;
+	cursor: pointer;
+}
+.news-details-btnHover{
+	border: 1px solid #007dcc;
+	background: #2997dc;
+	color: #FFFFFF;
+}
+
+
+/* 
+ *
+ *  @module: 医院机构门户-用户信息及登录入口 by zyc 
+ *  @content: start
+ * ***************************************************************************
+ */
+.user-box{
+	height: 30px;
+	background: #F5F5F5;
+}
+.user-login{
+	max-width: 1200px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+}
+.user-login p{
+	padding-left: 16px;
+	line-height: 30px;
+	font-size: 0.8em;
+}
+.user-login .txtA,.user-login .txtA:hover{
+	color: #5b5b5b;
+	cursor: default;
+}
+.user-login .logAcolor{
+	color: #5b5b5b;
+}
+.user-login .logAcolor:hover{
+	color: #fe8300;
+}
+
+.user-login .regAcolor{
+	margin-left: 20px;
+	color: #fe8300;
+}
+.user-login .regAcolor:hover{
+	color: #fe8300;
+}
+.user-login .logoutA{
+	margin-left: 20px;
+	color: #d51400;
+}
+.user-login .logoutA:hover{
+	color: #9a0e00;	
+}

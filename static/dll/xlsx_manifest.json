@@ -1,0 +1,41 @@
+{
+  "name": "xlsx_library",
+  "content": {
+    "../node_modules/webpack/buildin/global.js": {
+      "id": 26,
+      "meta": {}
+    },
+    "../node_modules/node-libs-browser/node_modules/process/browser.js": {
+      "id": 36,
+      "meta": {}
+    },
+    "../node_modules/buffer/index.js": {
+      "id": 83,
+      "meta": {}
+    },
+    "../node_modules/xlsx/xlsx.js": {
+      "id": 444,
+      "meta": {}
+    },
+    "../node_modules/base64-js/index.js": {
+      "id": 484,
+      "meta": {}
+    },
+    "../node_modules/ieee754/index.js": {
+      "id": 755,
+      "meta": {}
+    },
+    "../node_modules/isarray/index.js": {
+      "id": 756,
+      "meta": {}
+    },
+    "../node_modules/xlsx/dist/cpexcel.js": {
+      "id": 823,
+      "meta": {}
+    },
+    "../node_modules/xlsx/jszip.js": {
+      "id": 824,
+      "meta": {}
+    }
+  }
+}

@@ -1,0 +1,168 @@
+/* 工作台布局基础 */
+
+@import"./var";
+// 常量
+$uwNoticeHeight: 24px+$paddingSize * 2; // 通知区域高度
+$uwRightWidth: 320px+$scrollWidth; // 右侧宽度
+// 工作台容器
+.userWork {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .userOperate {
+        color: #0087b4;
+    } // 数字角标
+    .uwNum {
+        min-width: 22px;
+        padding: 1px 4px;
+        text-align: center;
+        display: block;
+        float: right;
+        background-color: #f7ba2a;
+        color: #fff;
+        border-radius: 10px;
+        &.red {
+            background-color: #fa575b;
+        }
+        &.green {
+            background-color: #a3d36f;
+        }
+    }
+    .uwHeader {
+        overflow: hidden;
+    }
+    .uwContent {
+        line-height: 36px;
+    }
+}
+
+// 通知
+.uwNotice {
+    height: $uwNoticeHeight;
+    padding: $paddingSize;
+    border-bottom: $mdBorderSize solid $mdBorderColor;
+    &~.uwTodoZone {
+        top: $uwNoticeHeight;
+    }
+}
+
+// 工作区
+.uwTodoZone {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+// 右侧快捷导航
+.uwRight {
+    width: $uwRightWidth + $scrollWidth;
+    position: absolute;
+    top: 0;
+    right: -$scrollWidth;
+    bottom: 0;
+    border-left: $mdBorderSize solid $mdBorderColor;
+    padding-right: $scrollWidth;
+    background-color: $publicBgColor;
+    overflow: auto;
+    &~.leftContent {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: $uwRightWidth;
+    }
+}
+
+// 左侧区域
+.leftContent {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* 待操作事项 */
+
+.uwTodoList {
+    .uwtItem {
+        cursor: pointer;
+        margin: 10px 0;
+        overflow: hidden;
+        &~.uwtItem {
+            margin-top: 16px;
+        }
+        &:hover .uwtTitle {
+            color: $mdHoverColor;
+        }
+    }
+    .uwtTitle {
+        line-height: 24px;
+        font-size: 16px;
+        padding-left: 50px;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: ' ';
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            top: -3px;
+            background-image: url(~@/assets/ambuf/css/manage_v1.0/images/icons.png);
+        }
+        &.dbsy::before {
+            background-position: center -420px;
+        }
+        &.ybsy::before {
+            background-position: center -450px;
+        }
+        &.tzgg::before {
+            background-position: center -480px;
+        }
+    }
+}
+
+
+/* 内容项 */
+
+// 实习生
+.uwStudent {
+    line-height: 24px;
+    overflow: hidden;
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+}
+
+.uwStudentConItem {
+    .uwscTips {
+        font-size: 14px;
+        padding-top: 40px;
+        strong {
+            margin: 0 5px;
+        }
+        p {
+            margin: 10px 0;
+        }
+    }
+    .myChars {
+        height: 130px;
+    }
+    .tips {
+        margin-top: 10px;
+        padding-left: 100px;
+    }
+    .todoBtn {
+        margin-top: 20px;
+    }
+}

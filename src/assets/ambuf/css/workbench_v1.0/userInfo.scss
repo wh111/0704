@@ -1,0 +1,25 @@
+/* 用户资料 */
+
+@import"./var";
+.uwUserInfo {
+    .userHeadPic {
+        width: $userPicWH;
+        height: $userPicWH;
+        border-radius: $userPicWH / 2;
+        margin: 20px auto 10px auto;
+        background-image: url(~@/assets/ambuf/images/defAvatar.png);
+        background-size: cover;
+        overflow: hidden;
+        img {
+          width: 100%; // height: 100%;
+          margin-top: -18px;
+        }
+    }
+    .userInfoName {
+        text-align: center;
+    }
+    .userInfoTodoBtn {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
